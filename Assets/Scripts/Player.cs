@@ -8,9 +8,9 @@ public class Player : MonoBehaviour
     [SerializeField] int hp;
     [SerializeField] Rigidbody2D rigid;
     [SerializeField] int currentEXP;
-    int level = 1;
+    [SerializeField] int level = 1;
 
-    int[] expToNextLev = [3,8,15,20];
+    int[] expToNextLev = { 3, 8, 15, 20 };
 
 
     private void Awake()
