@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -6,6 +7,11 @@ public class Player : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] int hp;
     [SerializeField] Rigidbody2D rigid;
+    [SerializeField] int currentEXP;
+    int level = 1;
+
+    int[] expToNextLev = [3,8,15,20];
+
 
     private void Awake()
     {
@@ -35,6 +41,24 @@ public class Player : MonoBehaviour
     public void getDamage(int damage)
     {
         hp -=damage;
+    }
+
+    public void addExperience(int experience)
+    {
+        currentEXP += experience;
+        int i = 0;
+       
+        if (currentEXP >= expToNextLev[i])
+        {
+            levelUp();
+            i++;
+        }
+    }
+
+    public void levelUp()
+    {
+        currentEXP = 0;
+        level++;
     }
 
 }
