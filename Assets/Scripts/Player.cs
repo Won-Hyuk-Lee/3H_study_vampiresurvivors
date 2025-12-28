@@ -5,7 +5,7 @@ public class Player : MonoBehaviour
 {
     private Vector2 inputVec;
     [SerializeField] float speed;
-    [SerializeField] int hp;
+    [SerializeField] int hp = 10;
     [SerializeField] Rigidbody2D rigid;
     [SerializeField] int currentEXP;
     [SerializeField] int level = 1;

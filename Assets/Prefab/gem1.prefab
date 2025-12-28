@@ -102,7 +102,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181415e3cac6be747b48aa6f6d9a3c43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  expValue: 0
   playerTrans: {fileID: 0}
+  rigid2d: {fileID: -2979037474552422723}
 --- !u!70 &-6393279851197836643
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

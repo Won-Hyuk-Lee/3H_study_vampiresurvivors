@@ -40,11 +40,6 @@ public class Spawner : MonoBehaviour
 
     void MonsterSpawn()
     {
-        if (currentMonsterCount < maxMonsterCount)
-        {
-            currentMonsterCount++;
-            GameObject.Instantiate(monster);
-        }
         if (currentMonsterCount >= maxMonsterCount) return;
 
         Vector3 spawnPos = playerTarget.position + (Vector3)(Random.insideUnitCircle.normalized * spawnDistance);

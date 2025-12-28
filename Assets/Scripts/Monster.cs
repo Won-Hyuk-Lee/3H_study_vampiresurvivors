@@ -7,7 +7,7 @@ public class Monster : MonoBehaviour
     // 플레이어 위치, 데미지, 체력, 속도 
     [SerializeField] Transform playerTrans;
     [SerializeField] Rigidbody2D rigid2d;
-    [SerializeField] int health = 5;
+    [SerializeField] int hp = 5;
     int damage = 2;
     int speed = 2;
     int exp = 2;
@@ -59,9 +59,9 @@ public class Monster : MonoBehaviour
 
     public void GetDamage(int damage)
     {
-        health -= damage;
+        hp -= damage;
 
-        if(health <= 0)
+        if(hp <= 0)
         {
 
             Die();

@@ -360,7 +360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 023825890909a264c8987757285f2a3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTarget: {fileID: 1711861452}
+  playerTarget: {fileID: 0}
   monster: {fileID: 9133540337113541201, guid: 944341ad730865e4b996a2a604342b7a, type: 3}
   spawnTime: 0.5
   spawnDistance: 12
@@ -504,6 +504,7 @@ MonoBehaviour:
   hp: 0
   rigid: {fileID: 1711861454}
   currentEXP: 0
+  level: 1
 --- !u!50 &1711861454
 Rigidbody2D:
   serializedVersion: 5
